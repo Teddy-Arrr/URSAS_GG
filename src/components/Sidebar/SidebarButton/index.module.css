@@ -1,0 +1,55 @@
+.sidebarButton
+{
+    padding: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-bottom: 1em;
+}
+
+.sidebarButton svg
+{
+    height: 16px;
+    width: 16px;
+}
+
+.sidebarButton.sidebarButton__active:hover
+{
+    opacity: .6;
+}
+
+.sidebarButton:not(.sidebarButton__active):hover > svg path
+{
+    fill: #B5C4E3;
+}
+
+.sidebarButton__active
+{
+    background: #222A3A;
+    border-radius: 6px;
+}
+
+
+.sidebarButton__active > svg path
+{
+    fill: #E7DF36;
+}
+
+
+@media (max-width: 1060px)
+{
+    .sidebarButton
+    {
+        margin-bottom: 0;
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px)
+{
+    .sidebarButton
+    {
+        padding: 8px;
+    }
+}

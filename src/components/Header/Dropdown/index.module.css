@@ -1,0 +1,177 @@
+.dropdown
+{
+    position: relative;
+    user-select: none;
+    line-height: 1em;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -webkit-touch-callout: none;
+    -o-user-select: none;
+    -moz-user-select: none;
+}
+
+.badge
+{
+    background: #313B52;
+    color: #B5C4E3;
+    height: 30px;
+    min-width: 30px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    border-radius: 30px;
+    font-size: 16px;
+    line-height: 1em;
+}
+
+.button
+{
+    color: #4E5E80;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    align-items: center;
+    border-radius: 24px;
+    background: #222A3A;
+    padding: 15px;
+    border: none;
+    gap: 4px;
+}
+
+.data
+{
+    display: none;
+    position: absolute;
+    transform: translateY(calc(100% + 15px));
+    background: #293145;
+    bottom: 0;
+    left: 0;
+    width: max-content;
+    border-radius: 0 0 24px 24px;
+    z-index: 2;
+    padding-bottom: 16px;
+}
+
+.dataContainer
+{
+    padding: 0 15px;
+    max-height: 150px;
+    overflow-x: visible;
+    overflow-y: auto;
+}
+
+/* width */
+.dataContainer::-webkit-scrollbar {
+    width: 3px;
+}
+
+/* Track */
+.dataContainer::-webkit-scrollbar-track {
+    background: rgba(34, 42, 58, 1);
+}
+
+/* Handle */
+.dataContainer::-webkit-scrollbar-thumb {
+    background: #313b52;
+    border-radius: 5px;
+}
+
+/* Handle on hover */
+.dataContainer::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+  
+
+.dataActive
+{
+    display: block;
+}
+
+.dataItem
+{
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+
+.dataItem:hover
+{
+    opacity: .8;
+}
+
+.dataAngleLeft
+{
+    position: absolute;
+    left: 0;
+    height: 20px;
+    transform: translate(-100%);
+}
+
+.dataAngleRight
+{
+    position: absolute;
+    right: 0;
+    height: 20px;
+    transform: translate(calc(100% - 1px));    
+}
+
+.arrowIcon
+{
+    height: 6px;
+    margin-left: 4px;
+    transition: .3s;
+}
+
+.arrowIconActive
+{
+    transform: rotate(-180deg);
+}
+
+.arrowIconActive path
+{
+    fill: #E7DF36;
+}
+
+
+@media (max-width: 768px)
+{
+    .button
+    {
+        padding: 8px 10px;
+        border-radius: 6px;
+        gap: 4px;
+    }
+
+    .badge
+    {
+        background: none;
+        height: auto;
+        min-width: auto;
+        font-size: 12px;
+        padding: 0 3px;
+    }
+
+    .data{
+        transform: translateY(calc(100% + 7px));
+        font-size: 12px;
+        border-radius: 0 0 12px 12px;
+        padding-bottom: 6px;
+    }
+    .dataContainer
+    {
+        padding: 0 15px;
+    }
+    .dataAngleRight
+    {
+        height: 15px;
+    }
+    .dataAngleLeft
+    {
+        height: 15px;
+    }
+
+    .arrowIcon
+    {
+        margin-left: 0;
+    }
+}

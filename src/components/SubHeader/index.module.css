@@ -1,0 +1,75 @@
+.subHeader
+{
+    position: relative;
+    border-radius: 24px;
+    background: #293145;
+    padding: 16px;
+    border: 1px solid #384156;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    justify-content: space-between;
+    color: #4E5E80;
+    margin: 30px 16px 0px;
+    line-height: 1em;
+}
+
+.subHeaderSection
+{
+    display: flex;
+}
+
+.subHeaderButton
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #222A3A;
+    color: #4E5E80;
+    min-width: 140px;
+    text-align: center;
+    border: none;
+    border-radius: 32px;
+    cursor: pointer;
+    height: 44px;
+}
+
+.subHeaderButtonActive
+{
+    background: #313B52;
+}
+
+.subHeaderButtonActive .subHeaderButtonValue
+{
+    color: #B5C4E3;
+}
+
+.subHeaderButton:hover
+{
+    opacity: .7;
+}
+
+.section
+{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+@media (max-width: 768px)
+{
+    .subHeader
+    {
+        border-radius: 12px;
+        padding: 8px;
+        margin-bottom: 8px;
+        margin: 8px 8px 0;
+    }
+    .subHeaderButton
+    {
+        display: block;
+        width: 100%;
+        font-size: 12px;
+        padding: 7px;
+    }
+}

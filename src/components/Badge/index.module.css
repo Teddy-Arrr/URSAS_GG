@@ -1,0 +1,28 @@
+.badge
+{
+    background: #313B52;
+    color: #B5C4E3;
+    height: 30px;
+    min-width: 30px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px;
+    border-radius: 30px;
+    line-height: 1em;
+}
+
+@media (max-width: 768px)
+{
+    .badge
+    {
+        font-size: 12px;
+        height: 30px;
+        min-width: 30px;
+    }
+
+    .transparentMobile
+    {
+        background: none;
+    }
+}

@@ -1,0 +1,35 @@
+.header
+{
+    background: #293145;
+    position: relative;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.section
+{
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+@media (max-width: 1060px)
+{
+    
+}
+
+@media (max-width: 768px)
+{
+    
+    .section
+    {
+        gap: 4px;   
+        padding: 8px;
+    }
+}

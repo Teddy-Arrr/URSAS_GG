@@ -1,0 +1,34 @@
+body
+{
+    line-height: 1rem;
+}
+
+a
+{
+    color: #B5C4E3;
+}
+
+.fontSpecial
+{
+    font-family: "Eckhardt Deco";
+}
+
+.textActive
+{
+    color: #E7DF36;
+}
+
+.textPrimary
+{
+    color: #B5C4E3;
+}
+
+.textMuted
+{
+    color: #4E5E80;
+}
+
+.fixNumber
+{
+    font-family: Arial, Helvetica, sans-serif;
+}
